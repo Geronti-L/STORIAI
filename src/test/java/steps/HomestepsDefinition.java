@@ -74,4 +74,9 @@ public class HomestepsDefinition {
         js.executeScript("arguments[0].style.background='green'",element);
         element.sendKeys("background is green");
     }
+
+    @When("I refresh browser")
+    public void iRefreshBrowser() {
+        driver.navigate().refresh();
+    }
 }

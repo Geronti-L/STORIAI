@@ -8,7 +8,7 @@ Feature: kkk
     When I click search button
     Then I wait 5 seconds
 
-#    When I write a text
+    When I refresh browser
 #    Then I go back to page
 
 #   Then I quit chrome
