@@ -5,62 +5,73 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class HomestepsDefinition {
     public static WebDriver driver=new ChromeDriver();
+    JavascriptExecutor js=(JavascriptExecutor) driver;
 
-
-    @Given("I navigate to the home page")
-    public void i_navigate_to_the_home_page() {
-//        ChromeOptions options=new ChromeOptions();
-//        options.addArguments("--remote-allow-origins=*");
-//        System.setProperty("webdriver.chrome.driver", "/Users/gerontiliparteliani/Downloads/chrome-mac-arm64/GoogleChromeforTesting.app");
-//       WebDriverManager.chromedriver().setup();
-//       WebDriver driver = new ChromeDriver();
-       driver.get("https://www.google.com");
-
-    }
-    @When("click to search")
-    public void click_to_search() {
-            driver.findElement(By.name("q")).sendKeys("test");
-    }
-
-    @Given("I go to the page")
-    public void i_go_to_the_page() {
-        driver.get("https://www.google.com");
-    }
 
     @Given("I type to a page")
     public void i_type_to_a_page() {
-       driver.get("https://www.google.com");
+        driver.get("https://www.google.com");
+
     }
 
-    @When("I click on search")
-    public void i_click_on_search() {
-        driver.findElement(By.name("q"));
-    }
+
 
     @Then("I wait")
-    public void i_wait() throws InterruptedException {
-       Thread.sleep(200);
+    public void i_wait() {
+
+
     }
 
     @When("I write a text")
-    public void i_write_a_text() throws InterruptedException {
-        driver.findElement(By.id("APjFqb")).sendKeys("hello");
-        Thread.sleep(2000);
+    public void i_write_a_text() {
+
     }
 
     @Then("I go back to page")
     public void i_go_back_to_page() {
+
+    }
+
+
+    @When("I click search button")
+    public void iClickSearchButton() {
+       WebElement element= driver.findElement(By.xpath("//input[@value='Google Search']"));
+        js.executeScript("arguments[0].click()",element);
+    }
+
+    @Then("I wait {int} seconds")
+    public void iWaitSeconds(int number) throws InterruptedException {
+        Thread.sleep(number*1000);
+    }
+
+    @Then("I quit chrome")
+    public void iQuitChrome() {
         driver.quit();
     }
 
 
+    @When("I turn  search field to red")
+    public void iTurnSearchFieldToRed() {
+        WebElement element=driver.findElement(By.name("q"));
+        JavascriptExecutor js=(JavascriptExecutor) driver;
+        js.executeScript("arguments[0].style.background='red'",element);
+        element.sendKeys("background is red");
+    }
 
-
+    @When("I turn search field to green")
+    public void iTurnSearchFieldToGreen() {
+        WebElement element=driver.findElement(By.name("q"));
+        JavascriptExecutor js=(JavascriptExecutor) driver;
+        js.executeScript("arguments[0].style.background='green'",element);
+        element.sendKeys("background is green");
+    }
 }

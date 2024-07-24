@@ -13,7 +13,9 @@ import org.junit.runner.RunWith;
         features = "src/test/java/feature",
         glue = "src/test/java/steps",
         plugin = {"pretty","html:target/cucumber-reports.html"},
-        monochrome = true
+        publish = true,
+        tags = "@test"
+
 )
 public class TestRunner {
     @BeforeClass

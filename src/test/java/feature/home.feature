@@ -1,8 +1,28 @@
+@test
 Feature: kkk
-
+  @test1
   Scenario: kkk
     Given I type to a page
-    When I click on search
-    Then I wait
-    When I write a text
-    Then I go back to page
+    When I turn  search field to red
+    Then I wait 5 seconds
+    When I click search button
+    Then I wait 5 seconds
+
+#    When I write a text
+#    Then I go back to page
+
+#   Then I quit chrome
+
+
+
+  @test2
+  Scenario: kkk1
+    Given I type to a page
+    When I turn search field to green
+    Then I wait 5 seconds
+    When I click search button
+    Then I wait 5 seconds
+
+
+
+    Then I quit chrome
