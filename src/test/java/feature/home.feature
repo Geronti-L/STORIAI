@@ -22,6 +22,8 @@ Feature: kkk
     Then I wait 5 seconds
     When I click search button
     Then I wait 5 seconds
+    When I turn  search field to red
+
 
 
 
