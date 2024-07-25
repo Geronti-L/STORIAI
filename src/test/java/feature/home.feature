@@ -27,4 +27,3 @@ Feature: kkk
 
 
 
-    Then I quit chrome

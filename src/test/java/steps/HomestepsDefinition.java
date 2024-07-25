@@ -1,5 +1,7 @@
 package steps;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,8 +15,18 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
 public class HomestepsDefinition {
-    public static WebDriver driver=new ChromeDriver();
-    JavascriptExecutor js=(JavascriptExecutor) driver;
+    public static WebDriver driver;
+
+    @Before
+    public void setUp(){
+        driver=new ChromeDriver();
+    }
+    @After
+    public void tearDown(){
+        if(driver!=null){
+            driver.quit();
+        }
+    }
 
 
     @Given("I type to a page")
@@ -45,6 +57,7 @@ public class HomestepsDefinition {
     @When("I click search button")
     public void iClickSearchButton() {
        WebElement element= driver.findElement(By.xpath("//input[@value='Google Search']"));
+        JavascriptExecutor js=(JavascriptExecutor) driver;
         js.executeScript("arguments[0].click()",element);
     }
 
