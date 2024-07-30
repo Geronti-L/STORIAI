@@ -4,9 +4,9 @@ Feature: kkk
   Scenario: kkk
     Given I type to a page
     When I turn  search field to red
-    Then I wait 5 seconds
+#    Then I wait 5 seconds
     When I click search button
-    Then I wait 5 seconds
+#    Then I wait 5 seconds
 
     When I refresh browser
 #    Then I go back to page
@@ -23,6 +23,9 @@ Feature: kkk
     When I click search button
     Then I wait 5 seconds
     When I turn  search field to red
+    Then I reload browser
+    When I go back
+    Then I wait 3 seconds
 
 
 
