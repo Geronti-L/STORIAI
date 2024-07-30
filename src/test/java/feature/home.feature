@@ -11,7 +11,7 @@ Feature: kkk
     When I refresh browser
 #    Then I go back to page
 
-#   Then I quit chrome
+#   Then I quit chrom
 
 
 
