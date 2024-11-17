@@ -1,7 +1,7 @@
-@test
+@TestAll
 Feature: StoriAI
 
-@Test
+@Test1
 Scenario: StoriAI log in/out feature(Happy Path)
   Given I navigate to "develop.storiai.com/login"
 #  Then I wait 3 seconds
@@ -19,4 +19,24 @@ Then I wait 3 seconds
   Then I Should land on home page
 #  Then I wait 3 seconds
   When I click log out I should get logged out
+
+  @Test2
+  Scenario Outline: LogIn with incorrect credentials
+    Given I navigate to "develop.storiai.com/login"
+    Then the website should have title as  "STORI AI"
+    And log in page should be present
+    When I type username as <userName>
+    And I type password as <password>
+    And I accept the alert
+    When I click Sign in button
+    Then I wait 5 seconds
+    Then I should see an error message as "Invalid login attempt."
+    Examples:
+      | userName        | password |
+      | "test@test.com" | "ABC12"  |
+      |    ""           |    ""    |
+      |"kjk"            |"kjkjkghh"|
+
+
+
 

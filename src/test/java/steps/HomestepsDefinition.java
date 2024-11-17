@@ -179,4 +179,12 @@ public class HomestepsDefinition {
         element.getText().equals("Log in to your account");
 
     }
+
+    @Then("I should see an error message as {string}")
+    public void iShouldSeeAnErrorMessageAs(String error) {
+       String message= driver.findElement(By.xpath("//p[contains(text(),'Invalid login attempt.')]")).getText();
+       Assertions.assertThat(message.equals(error)).isTrue();
+
+
+    }
 }

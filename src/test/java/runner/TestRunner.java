@@ -17,7 +17,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
         glue = "steps",
         plugin = {"pretty","html:target/report.html","json:target/report.json"},
         publish = true,
-        tags = "@Test"
+        tags = "@Test2"
 
 )
 public class TestRunner {
