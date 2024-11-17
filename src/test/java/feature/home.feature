@@ -1,32 +1,22 @@
 @test
-Feature: kkk
-  @test1
-  Scenario: kkk
-    Given I type to a page
-    When I turn  search field to red
-#    Then I wait 5 seconds
-    When I click search button
-#    Then I wait 5 seconds
+Feature: StoriAI
 
-    When I refresh browser
-#    Then I go back to page
+@Test
+Scenario: StoriAI log in/out feature(Happy Path)
+  Given I navigate to "develop.storiai.com/login"
+#  Then I wait 3 seconds
+  Then the website should have title as  "STORI AI"
+#  Then I wait 3 seconds
+  And log in page should be present
+#  Then I wait 3 seconds
+  When I type username as "test@test.com"
+  And I type password as "ABC123"
+#  Then I wait 3 seconds
+  And I accept the alert
+  When I click Sign in button
 
-#   Then I quit chrom
-
-
-
-  @test2
-  Scenario: kkk1
-    Given I type to a page
-    When I turn search field to green
-    Then I wait 5 seconds
-    When I click search button
-    Then I wait 5 seconds
-    When I turn  search field to red
-    Then I reload browser
-    When I go back
-    Then I wait 3 seconds
-
-
-
+Then I wait 3 seconds
+  Then I Should land on home page
+#  Then I wait 3 seconds
+  When I click log out I should get logged out
 

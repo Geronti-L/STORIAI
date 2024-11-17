@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="562f8541-53e4-405c-b5de-3f47de5fee89" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/feature/home.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/home.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/HomestepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/HomestepsDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/log.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/log.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +32,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -50,28 +54,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Feature: home.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: .executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Log in.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Verify HomePage of the application.executor&quot;: &quot;Debug&quot;,
-    &quot;Cucumber Java.Scenario: kkk.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: kkk1.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TestRunner.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;workingbranch&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Cucumber Java.Feature: home.executor": "Run",
+    "Cucumber Java.Scenario: .executor": "Run",
+    "Cucumber Java.Scenario: Log in.executor": "Run",
+    "Cucumber Java.Scenario: StoriAI log in feature.executor": "Run",
+    "Cucumber Java.Scenario: Verify HomePage of the application.executor": "Debug",
+    "Cucumber Java.Scenario: kkk.executor": "Run",
+    "Cucumber Java.Scenario: kkk1.executor": "Run",
+    "JUnit.TestRunner.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "workingbranch",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: kkk">
+}]]></component>
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="Feature: home" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/home.feature" />
@@ -93,15 +98,19 @@
         <option name="MakeProject" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Log in" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: StoriAI log in feature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true" show_console_on_std_out="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="ca2ed219-eb76-4186-8a18-73526fdb9bc2" />
+      </envs>
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/feature/home.feature" />
       <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CucumberWithJavaProject" />
-      <option name="NAME_FILTER" value="^Log in$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Log in$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Log in" />
+      <option name="NAME_FILTER" value="^StoriAI log in feature$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^StoriAI log in feature$&quot;" />
+      <shortenClasspath name="NONE" />
+      <option name="SUGGESTED_NAME" value="Scenario: StoriAI log in feature" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -167,13 +176,17 @@
       </extension>
       <option name="PACKAGE_NAME" value="runner" />
       <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="CUCUMBER_PUBLISH_TOKEN" value="ca2ed219-eb76-4186-8a18-73526fdb9bc2" />
+      </envs>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Cucumber Java.Scenario: Log in" />
+      <item itemvalue="Cucumber Java.Scenario: StoriAI log in feature" />
       <item itemvalue="Cucumber Java.Scenario: kkk1" />
       <item itemvalue="Cucumber Java.Feature: home" />
       <item itemvalue="Cucumber Java.Scenario: kkk" />
@@ -181,11 +194,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: kkk" />
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: kkk1" />
+        <item itemvalue="Cucumber Java.Scenario: StoriAI log in feature" />
         <item itemvalue="Cucumber Java.Feature: home" />
-        <item itemvalue="Cucumber Java.Scenario: Log in" />
+        <item itemvalue="Cucumber Java.Scenario: kkk" />
+        <item itemvalue="Cucumber Java.Scenario: kkk1" />
       </list>
     </recent_temporary>
   </component>
