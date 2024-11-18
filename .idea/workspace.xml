@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="562f8541-53e4-405c-b5de-3f47de5fee89" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/home.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/home.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/HomestepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/HomestepsDefinition.java" afterDir="false" />
-    </list>
+    <list default="true" id="562f8541-53e4-405c-b5de-3f47de5fee89" name="Changes" comment="Negative login tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +17,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="workingbranch" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -68,7 +65,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "workingbranch",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
@@ -195,10 +192,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: StoriAI log in feature" />
-        <item itemvalue="Cucumber Java.Feature: home" />
         <item itemvalue="Cucumber Java.Scenario: kkk" />
+        <item itemvalue="Cucumber Java.Feature: home" />
         <item itemvalue="Cucumber Java.Scenario: kkk1" />
+        <item itemvalue="Cucumber Java.Scenario: StoriAI log in feature" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +224,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721852464905</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Negative login tests">
+      <option name="closed" value="true" />
+      <created>1731886889333</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731886889333</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Negative login tests">
+      <option name="closed" value="true" />
+      <created>1731889347678</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731889347678</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +256,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Negative login tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Negative login tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CucumberWithJavaProject$Scenario__kkk1.ic" NAME="Scenario: kkk1 Coverage Results" MODIFIED="1721875941991" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
