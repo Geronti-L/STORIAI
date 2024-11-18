@@ -37,7 +37,7 @@ Then I wait 3 seconds
       |    ""           |    ""    |
       |"kjk"            |"kjkjkghh"|
       |"kjkkjkjk"       |""        |
-      |"some test"      |"sometest12"|
+      |"some test"      |"sometest1245"|
     
 
 
