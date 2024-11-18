@@ -36,6 +36,7 @@ Then I wait 3 seconds
       | "test@test.com" | "ABC12"  |
       |    ""           |    ""    |
       |"kjk"            |"kjkjkghh"|
+      |"kjkkjkjk"       |""        |
 
 
 
