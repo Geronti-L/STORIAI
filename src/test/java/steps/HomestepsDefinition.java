@@ -187,4 +187,36 @@ public class HomestepsDefinition {
 
 
     }
+
+
+    @Given("I land on home page using valid credentials {string} and {string}")
+    public void iLandOnHomePageUsingValidCredentialsAnd(String userName, String password) throws InterruptedException {
+
+        iTypeUsernameAs(userName);
+        iTypePasswordAs(password);
+        iAcceptTheAlert();
+        iClickSignInButton();
+    }
+
+
+
+    @Then("warning {string} should popUp")
+    public void warningShouldPopUp(String warningMessage) throws InterruptedException {
+
+        driver.findElement(By.xpath("//div[contains(text(),'You have reached the limit of posts for your works')]")).isDisplayed();
+
+
+    }
+
+    @And("I click Create Post")
+    public void iClickCreatePost() {
+        WebElement ele=driver.findElement(By.xpath("//button[normalize-space()='Create Post']"));
+        ele.click();
+    }
+
+//    @And("I click on  Create Post")
+//    public void iClickOnCreatePost() {
+//        WebElement ele=driver.findElement(By.xpath("//button[normalize-space()='Create Post']"));
+//        ele.click();
+//    }
 }
