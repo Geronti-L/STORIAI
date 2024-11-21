@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="562f8541-53e4-405c-b5de-3f47de5fee89" name="Changes" comment="Negative login tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/feature/home.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/feature/home.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/HomestepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/HomestepsDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,7 @@
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Checking limit of posts warning message">
+  <component name="RunManager" selected="Cucumber Java.Feature: home">
     <configuration name="Feature: home" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <envs>
@@ -200,11 +197,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Checking limit of posts warning message" />
+        <item itemvalue="Cucumber Java.Feature: home" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Checking limit of posts warning message" />
         <item itemvalue="Cucumber Java.Scenario: LogIn with incorrect credentials" />
         <item itemvalue="Cucumber Java.Scenario: kkk" />
-        <item itemvalue="Cucumber Java.Feature: home" />
       </list>
     </recent_temporary>
   </component>
