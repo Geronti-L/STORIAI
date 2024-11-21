@@ -38,6 +38,17 @@ Then I wait 3 seconds
       |"kjk"            |"kjkjkghh"|
       |"kjkkjkjk"       |""        |
       |"some test"      |"sometest1245678"|
+
+
+    @Test3
+    Scenario: Checking "limit of posts" warning message
+      Given I navigate to "develop.storiai.com/login"
+      When I land on home page using valid credentials "test@test.com" and "ABC123"
+      And I wait 2 seconds
+      When I click Create Post
+      And I wait 1 seconds
+      Then warning "You have reached the limit of posts for your workspace." should popUp
+
     
 
 
